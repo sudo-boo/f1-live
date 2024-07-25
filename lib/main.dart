@@ -1,6 +1,8 @@
 // main.dart
 
 import 'package:f1_live/pages/home_page.dart';
+import 'package:f1_live/pages/internal_main_page.dart';
+import 'package:f1_live/pages/live_timings_page.dart';
 import 'package:f1_live/pages/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -15,13 +17,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        "/": (context) => const SplashScreen(),
+        "/splash": (context) => const SplashScreen(),
+        "/": (context) => const InternalMainPage(),
         "/home": (context) => const HomePage(),
+        "/live": (context) => const LiveTimingsPage(),
       },
       theme: ThemeData(
         fontFamily: 'SFPro',
       ),
-      initialRoute: "/",
+      initialRoute: "/splash",
       debugShowCheckedModeBanner: false,
     );
   }

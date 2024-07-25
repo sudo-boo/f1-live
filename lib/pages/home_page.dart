@@ -1,4 +1,4 @@
-// home_page.dart
+// lib/home_page.dart
 
 import 'package:flutter/material.dart';
 
@@ -13,11 +13,11 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Home Page'),
-      ),
-      body: const Center(
-        child: Text('Home Page'),
+      backgroundColor: Colors.white,
+      body: Center(
+        child: Text(
+          "Home Page"
+        ),
       ),
     );
   }
