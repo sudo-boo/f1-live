@@ -31,7 +31,7 @@ class _InternalMainPageState extends State<InternalMainPage> {
       body: _pages[_selectedIndex],
       bottomNavigationBar: CurvedNavigationBar(
         index: _selectedIndex,
-        height: 65.0,
+        height: 55.0,
         backgroundColor: Colors.transparent,
         color: F1Red,
         buttonBackgroundColor: F1Red,
