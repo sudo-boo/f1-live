@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:f1_live/utils/helpers.dart';
 
-
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -24,11 +23,24 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF28282b),
+      backgroundColor: Colors.red,
       body: Center(
-        child: Image.asset(
-          'assets/images/splash.png',
-          height: screenHeight(context),
+        child: Container(
+          width: screenWidth(context) * 0.55,
+          height: screenWidth(context) * 0.55,
+          decoration: const BoxDecoration(
+            color: Colors.white,
+            shape: BoxShape.circle,
+          ),
+          child: Center(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(0, 0, 0, 20),
+              child: Image.asset(
+                'assets/icons/formula.png',
+                height: screenWidth(context) * 0.4,
+              ),
+            ),
+          ),
         ),
       ),
     );

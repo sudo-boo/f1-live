@@ -1,5 +1,6 @@
 // main.dart
 
+import 'package:f1_live/pages/home_page.dart';
 import 'package:f1_live/pages/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -15,9 +16,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         "/": (context) => const SplashScreen(),
+        "/home": (context) => const HomePage(),
       },
       theme: ThemeData(
-        fontFamily: 'Inter',
+        fontFamily: 'SFPro',
       ),
       initialRoute: "/",
       debugShowCheckedModeBanner: false,
